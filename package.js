@@ -12,8 +12,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.use('jagi:astronomy');
-  api.use('jagi:astronomy-validators');
+  api.use('jagi:astronomy@1.0.0');
+  api.use('jagi:astronomy-validators@1.0.0');
   api.addFiles('astronomy-simple-schema.js');
 });
 
