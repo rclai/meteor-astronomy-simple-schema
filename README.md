@@ -2,7 +2,7 @@
 
 Convert Astronomy classes to Simple Schemas. Useful as a refactor path and for getting them to work in Autoforms.
 
-__Work in progress.__
+__Work in progress.__ Feel free to try at your own risk.
 
 ### Installation
 
