@@ -12,14 +12,12 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.use('ecmascript');
   api.use('jagi:astronomy');
   api.use('jagi:astronomy-validators');
   api.addFiles('astronomy-simple-schema.js');
 });
 
 Package.onTest(function(api) {
-  api.use('ecmascript');
   api.use('tinytest');
   api.use('lai:astronomy-simple-schema');
   api.addFiles('astronomy-simple-schema-tests.js');
