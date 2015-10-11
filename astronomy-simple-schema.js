@@ -16,10 +16,15 @@ var determineFieldType = function(field) {
     // Currently only plain nested types are allowed
     var arrayElementType = constructorTypeMap[field.field.constructor.name];
     if (!_.isUndefined(arrayElementType)) {
-      return [arrayElementType];
+      fieldType.push(arrayElementType);
     } else {
+      // XXX Need to think this more:
+      // What do we do about NullFields? SimpleSchema doesn't
+      // support them
+
       // Assume an array of objects
-      return [Object];
+      // And flag the field as `blackbox` true for now
+      fieldType.push(Object);
     }
   }
   return fieldType;
@@ -81,7 +86,7 @@ Astro.eventManager.on('initClass', function() {
       fieldDef.type = determineFieldType(field);
 
       // XXX for now any object field or array of Objects will be a blackbox
-      // until I get a chance to handle it
+      // until I get a chance to figure it out, if possible
       if (fieldDef.type === Object || (_.isArray(fieldDef.type) && fieldDef.type[0] === Object)) {
         fieldDef.blackbox = true;
       }

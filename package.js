@@ -1,6 +1,6 @@
 Package.describe({
   name: 'lai:astronomy-simple-schema',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Convert Astronomy classes to Simple Schemas',
   // URL to the Git repository containing the source code for this package.
