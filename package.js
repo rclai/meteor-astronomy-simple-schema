@@ -2,7 +2,7 @@ Package.describe({
   name: 'lai:astronomy-simple-schema',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: 'Convert Astronomy classes to SimpleSchemas',
+  summary: 'Convert Astronomy classes to Simple Schemas',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/rclai/meteor-astronomy-simple-schema.git',
   // By default, Meteor will default to using README.md for documentation.
